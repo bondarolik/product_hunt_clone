@@ -1,0 +1,20 @@
+<!-- app/views/products/index.html.erb -->
+<div class="row">
+  <div class="col-12"><h1>Awesome Products</h1></div>
+
+  <% @products.each do |product| %>
+    <div class="col-3">
+      <div class="card-product">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" width="200" />
+        <div class="card-product-infos">
+          <%= content_tag(:h2, product.name) %>
+          <%= content_tag(:h2, product.tagline) %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
